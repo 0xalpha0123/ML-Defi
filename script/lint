@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -eo pipefail
+
+DIR=`dirname $0`
+PROJ_ROOT="$DIR/.."
+echo "Running on tests..."
+"$PROJ_ROOT/node_modules/.bin/solium" -d "$PROJ_ROOT/tests"
+echo "Running on contracts..."
+"$PROJ_ROOT/node_modules/.bin/solium" -d "$PROJ_ROOT/contracts"

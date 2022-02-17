@@ -1,0 +1,234 @@
+{
+  "address": "0x2B72557f0B67946A617906ea95e95a3f59FFF4D6",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "guardian_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "priceProvider",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oldGuardian",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newGuardian",
+          "type": "address"
+        }
+      ],
+      "name": "NewGuardian",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oldAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "PriceOracleAdapterUpdated",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "assetPrices",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "guardian",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "priceProviderMoC",
+      "outputs": [
+        {
+          "internalType": "contract PriceProviderMoC",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newGuardian",
+          "type": "address"
+        }
+      ],
+      "name": "setGuardian",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "priceProviderAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setPriceProvider",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xb5a4fadfcb1ef1378e5fff047db6797d4fe1e257ffbde97687dd76e5842bf351",
+  "receipt": {
+    "to": null,
+    "from": "0x673FfE9D00DdB550e11fD8c796DFd0ec0D26566d",
+    "contractAddress": "0x2B72557f0B67946A617906ea95e95a3f59FFF4D6",
+    "transactionIndex": 2,
+    "gasUsed": "378572",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x56e80e4f439174721df8563bba7c4e9ec2011ab8a1dad8665f21750695102aed",
+    "transactionHash": "0xb5a4fadfcb1ef1378e5fff047db6797d4fe1e257ffbde97687dd76e5842bf351",
+    "logs": [],
+    "blockNumber": 11660295,
+    "cumulativeGasUsed": "881410",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x9E8fA1b41B301bd7Fcc9DaC320E8eA91555Db7b0",
+    "0xF5b2cD95B0D5935d9D1ab0A0875006A29D5667e3"
+  ],
+  "solcInputHash": "b5a113507e380d935218651336b00698",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"guardian_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"priceProvider\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldGuardian\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newGuardian\",\"type\":\"address\"}],\"name\":\"NewGuardian\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newAddress\",\"type\":\"address\"}],\"name\":\"PriceOracleAdapterUpdated\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"assetPrices\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"guardian\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"priceProviderMoC\",\"outputs\":[{\"internalType\":\"contract PriceProviderMoC\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newGuardian\",\"type\":\"address\"}],\"name\":\"setGuardian\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"priceProviderAddress\",\"type\":\"address\"}],\"name\":\"setPriceProvider\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"assetPrices(address)\":{\"return\":\"The price\"},\"constructor\":{\"params\":{\"guardian_\":\"address of guardian that is allowed to manage this contract\",\"priceProvider\":\"address of asset's MoC price provider\"}},\"setGuardian(address)\":{\"params\":{\"newGuardian\":\"address of the guardian\"}},\"setPriceProvider(address)\":{\"params\":{\"priceProviderAddress\":\"address of price provider\"}}}},\"userdoc\":{\"methods\":{\"assetPrices(address)\":{\"notice\":\"Get the price from MoC and divide it by the rBTC price\"},\"constructor\":\"Construct a PriceOracleAdapter for a MoC oracle\",\"setGuardian(address)\":{\"notice\":\"Set the address of the guardian\"},\"setPriceProvider(address)\":{\"notice\":\"Set the address of price provider\"}}}},\"settings\":{\"compilationTarget\":{\"contracts/PriceOracleAdapterMoc.sol\":\"PriceOracleAdapterMoc\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/PriceOracleAdapter.sol\":{\"content\":\"pragma solidity ^0.5.16;\\r\\n\\r\\ncontract PriceOracleAdapter {\\r\\n    /// @notice Event adapter interface updated\\r\\n    event PriceOracleAdapterUpdated(address oldAddress, address newAddress);\\r\\n\\r\\n    /**\\r\\n     * @notice Get the price\\r\\n     * @return The underlying asset price mantissa (scaled by 1e18).\\r\\n     *  Zero means the price is unavailable.\\r\\n     */\\r\\n    function assetPrices(address cTokenAddress) external view returns (uint256);\\r\\n}\\r\\n\",\"keccak256\":\"0xe362d7582b53b7d7f30da44a14a3a93cbffeb815c155c674e91fcd202830495b\"},\"contracts/PriceOracleAdapterMoc.sol\":{\"content\":\"pragma solidity ^0.5.16;\\r\\n\\r\\nimport \\\"./PriceOracleAdapter.sol\\\";\\r\\n\\r\\ninterface PriceProviderMoC {\\r\\n    function peek() external view returns (bytes32, bool);\\r\\n}\\r\\n\\r\\ncontract PriceOracleAdapterMoc is PriceOracleAdapter {\\r\\n    /// @notice Address of the guardian\\r\\n    address public guardian;\\r\\n    /// @notice The MoC price oracle, which will continue to serve prices\\r\\n    PriceProviderMoC public priceProviderMoC;\\r\\n\\r\\n    /// @notice Guardian updated\\r\\n    event NewGuardian(address oldGuardian,address newGuardian);\\r\\n\\r\\n    /**\\r\\n     * @notice Construct a PriceOracleAdapter for a MoC oracle\\r\\n     * @param guardian_ address of guardian that is allowed to manage this contract\\r\\n     * @param priceProvider address of asset's MoC price provider\\r\\n     */\\r\\n    constructor(address guardian_,address priceProvider) public {\\r\\n        require(\\r\\n            guardian_ != address(0),\\r\\n            \\\"PriceOracleAdapterMoc: guardian could not be 0\\\"\\r\\n        );\\r\\n        require(\\r\\n            priceProvider != address(0),\\r\\n            \\\"PriceOracleAdapterMoc: priceProvider could not be 0\\\"\\r\\n        );\\r\\n        guardian = guardian_;\\r\\n        priceProviderMoC = PriceProviderMoC(priceProvider);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Get the price from MoC and divide it by the rBTC price\\r\\n     * @return The price\\r\\n     */\\r\\n    function assetPrices(address) public view returns (uint256) {\\r\\n        (bytes32 price, bool has) = priceProviderMoC.peek();\\r\\n        require(has, \\\"PriceOracleAdapterMoc: Oracle have no Price\\\");\\r\\n        return uint256(price);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Set the address of price provider\\r\\n     * @param priceProviderAddress address of price provider\\r\\n     */\\r\\n    function setPriceProvider(address priceProviderAddress) public {\\r\\n        require(\\r\\n            msg.sender == guardian,\\r\\n            \\\"PriceOracleAdapterMoc: only guardian may set the address\\\"\\r\\n        );\\r\\n        require(\\r\\n            priceProviderAddress != address(0),\\r\\n            \\\"PriceOracleAdapterMoc: address could not be 0\\\"\\r\\n        );\\r\\n        //set old address\\r\\n        address oldPriceProviderAddress = address(priceProviderMoC);\\r\\n        //update interface address\\r\\n        priceProviderMoC = PriceProviderMoC(priceProviderAddress);\\r\\n        //emit event\\r\\n        emit PriceOracleAdapterUpdated(\\r\\n            oldPriceProviderAddress,\\r\\n            priceProviderAddress\\r\\n        );\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Set the address of the guardian\\r\\n     * @param newGuardian address of the guardian\\r\\n     */\\r\\n    function setGuardian(address newGuardian) public {\\r\\n        require(\\r\\n            msg.sender == guardian,\\r\\n            \\\"PriceOracleAdapterMoc: only guardian\\\"\\r\\n        );\\r\\n        require(\\r\\n            guardian != address(0),\\r\\n            \\\"PriceOracleAdapterMoc: guardin address can not be 0\\\"\\r\\n        );\\r\\n        //set old address\\r\\n        address oldGuardian = guardian;\\r\\n        //update\\r\\n        guardian = newGuardian;\\r\\n        //emit event\\r\\n        emit NewGuardian(\\r\\n            oldGuardian,\\r\\n            newGuardian\\r\\n        );\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x2fbecd5dcae64b8ed36220a2a5f827f0bcb81774e5eb600a4ce8c6ef747e4b59\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161065b38038061065b8339818101604052604081101561003357600080fd5b5080516020909101516001600160a01b0382166100815760405162461bcd60e51b815260040180806020018281038252602e8152602001806105fa602e913960400191505060405180910390fd5b6001600160a01b0381166100c65760405162461bcd60e51b81526004018080602001828103825260338152602001806106286033913960400191505060405180910390fd5b600080546001600160a01b039384166001600160a01b031991821617909155600180549290931691161790556104f9806101016000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806303fa251b1461005c578063372aa22414610080578063452a9320146100a85780635e9a523c146100b05780638a0dac4a146100e8575b600080fd5b61006461010e565b604080516001600160a01b039092168252519081900360200190f35b6100a66004803603602081101561009657600080fd5b50356001600160a01b031661011d565b005b61006461020e565b6100d6600480360360208110156100c657600080fd5b50356001600160a01b031661021d565b60408051918252519081900360200190f35b6100a6600480360360208110156100fe57600080fd5b50356001600160a01b03166102ea565b6001546001600160a01b031681565b6000546001600160a01b031633146101665760405162461bcd60e51b81526004018080602001828103825260388152602001806104096038913960400191505060405180910390fd5b6001600160a01b0381166101ab5760405162461bcd60e51b815260040180806020018281038252602d815260200180610498602d913960400191505060405180910390fd5b600180546001600160a01b038381166001600160a01b0319831681179093556040805191909216808252602082019390935281517f58d7caa9bcc8339b310213ec53c711c9157920c93aef03ac3c4a16ce01bc602e929181900390910190a15050565b6000546001600160a01b031681565b6000806000600160009054906101000a90046001600160a01b03166001600160a01b03166359e02dd76040518163ffffffff1660e01b8152600401604080518083038186803b15801561026f57600080fd5b505afa158015610283573d6000803e3d6000fd5b505050506040513d604081101561029957600080fd5b5080516020909101519092509050806102e35760405162461bcd60e51b815260040180806020018281038252602b8152602001806103de602b913960400191505060405180910390fd5b5092915050565b6000546001600160a01b031633146103335760405162461bcd60e51b81526004018080602001828103825260248152602001806104746024913960400191505060405180910390fd5b6000546001600160a01b031661037a5760405162461bcd60e51b81526004018080602001828103825260338152602001806104416033913960400191505060405180910390fd5b600080546001600160a01b038381166001600160a01b0319831681179093556040805191909216808252602082019390935281517f08fdaf06427a2010e5958f4329b566993472d14ce81d3f16ce7f2a2660da98e3929181900390910190a1505056fe50726963654f7261636c65416461707465724d6f633a204f7261636c652068617665206e6f20507269636550726963654f7261636c65416461707465724d6f633a206f6e6c7920677561726469616e206d61792073657420746865206164647265737350726963654f7261636c65416461707465724d6f633a206775617264696e20616464726573732063616e206e6f74206265203050726963654f7261636c65416461707465724d6f633a206f6e6c7920677561726469616e50726963654f7261636c65416461707465724d6f633a206164647265737320636f756c64206e6f742062652030a265627a7a72315820723d1bf577baa6b07b9397d6162a91493ddf7104abed931fad75b54312dc02b164736f6c6343000511003250726963654f7261636c65416461707465724d6f633a20677561726469616e20636f756c64206e6f74206265203050726963654f7261636c65416461707465724d6f633a20707269636550726f766964657220636f756c64206e6f742062652030",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806303fa251b1461005c578063372aa22414610080578063452a9320146100a85780635e9a523c146100b05780638a0dac4a146100e8575b600080fd5b61006461010e565b604080516001600160a01b039092168252519081900360200190f35b6100a66004803603602081101561009657600080fd5b50356001600160a01b031661011d565b005b61006461020e565b6100d6600480360360208110156100c657600080fd5b50356001600160a01b031661021d565b60408051918252519081900360200190f35b6100a6600480360360208110156100fe57600080fd5b50356001600160a01b03166102ea565b6001546001600160a01b031681565b6000546001600160a01b031633146101665760405162461bcd60e51b81526004018080602001828103825260388152602001806104096038913960400191505060405180910390fd5b6001600160a01b0381166101ab5760405162461bcd60e51b815260040180806020018281038252602d815260200180610498602d913960400191505060405180910390fd5b600180546001600160a01b038381166001600160a01b0319831681179093556040805191909216808252602082019390935281517f58d7caa9bcc8339b310213ec53c711c9157920c93aef03ac3c4a16ce01bc602e929181900390910190a15050565b6000546001600160a01b031681565b6000806000600160009054906101000a90046001600160a01b03166001600160a01b03166359e02dd76040518163ffffffff1660e01b8152600401604080518083038186803b15801561026f57600080fd5b505afa158015610283573d6000803e3d6000fd5b505050506040513d604081101561029957600080fd5b5080516020909101519092509050806102e35760405162461bcd60e51b815260040180806020018281038252602b8152602001806103de602b913960400191505060405180910390fd5b5092915050565b6000546001600160a01b031633146103335760405162461bcd60e51b81526004018080602001828103825260248152602001806104746024913960400191505060405180910390fd5b6000546001600160a01b031661037a5760405162461bcd60e51b81526004018080602001828103825260338152602001806104416033913960400191505060405180910390fd5b600080546001600160a01b038381166001600160a01b0319831681179093556040805191909216808252602082019390935281517f08fdaf06427a2010e5958f4329b566993472d14ce81d3f16ce7f2a2660da98e3929181900390910190a1505056fe50726963654f7261636c65416461707465724d6f633a204f7261636c652068617665206e6f20507269636550726963654f7261636c65416461707465724d6f633a206f6e6c7920677561726469616e206d61792073657420746865206164647265737350726963654f7261636c65416461707465724d6f633a206775617264696e20616464726573732063616e206e6f74206265203050726963654f7261636c65416461707465724d6f633a206f6e6c7920677561726469616e50726963654f7261636c65416461707465724d6f633a206164647265737320636f756c64206e6f742062652030a265627a7a72315820723d1bf577baa6b07b9397d6162a91493ddf7104abed931fad75b54312dc02b164736f6c63430005110032",
+  "devdoc": {
+    "methods": {
+      "assetPrices(address)": {
+        "return": "The price"
+      },
+      "constructor": {
+        "params": {
+          "guardian_": "address of guardian that is allowed to manage this contract",
+          "priceProvider": "address of asset's MoC price provider"
+        }
+      },
+      "setGuardian(address)": {
+        "params": {
+          "newGuardian": "address of the guardian"
+        }
+      },
+      "setPriceProvider(address)": {
+        "params": {
+          "priceProviderAddress": "address of price provider"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "assetPrices(address)": {
+        "notice": "Get the price from MoC and divide it by the rBTC price"
+      },
+      "constructor": "Construct a PriceOracleAdapter for a MoC oracle",
+      "setGuardian(address)": {
+        "notice": "Set the address of the guardian"
+      },
+      "setPriceProvider(address)": {
+        "notice": "Set the address of price provider"
+      }
+    }
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 36087,
+        "contract": "contracts/PriceOracleAdapterMoc.sol:PriceOracleAdapterMoc",
+        "label": "guardian",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 36089,
+        "contract": "contracts/PriceOracleAdapterMoc.sol:PriceOracleAdapterMoc",
+        "label": "priceProviderMoC",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(PriceProviderMoC)36083"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(PriceProviderMoC)36083": {
+        "encoding": "inplace",
+        "label": "contract PriceProviderMoC",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}
